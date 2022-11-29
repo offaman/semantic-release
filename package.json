@@ -1,11 +1,12 @@
 {
   "name": "semantic-release-artifacts",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release": "semantic-release main"
+    "semantic-release": "semantic-release --branches main",
+    "commit":"git-cz"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,12 @@
     "url": "https://github.com/offaman/semantic-release.git"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "semantic-release": "^19.0.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
