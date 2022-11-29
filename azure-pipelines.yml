@@ -18,4 +18,5 @@ steps:
 - task: Npm@0
   inputs:
     command: 'run semantic-release'
+  env: { GH_TOKEN: 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 }
   displayName: 'sem rel'
