@@ -16,5 +16,5 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npx semantic-release
-  displayName: 'npx'
+    npm run semantic-release
+  displayName: 'semantic-release'
