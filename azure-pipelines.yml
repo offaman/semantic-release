@@ -15,7 +15,9 @@ steps:
     versionSpec: '16.x'
   displayName: 'Install Node.js'
 
-- task: Npm@0
+
+- task: CmdLine@2
   inputs:
-    command: 'run semantic-release'
-  displayName: 'sem rel'
+    script: 'npm run semantic-release'
+  displayName: "semantic release"
+
