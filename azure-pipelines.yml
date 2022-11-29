@@ -19,5 +19,6 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'npm run semantic-release'
+  env: { GH_TOKEN: $(System.npm-publish-token) }
   displayName: "semantic release"
 
