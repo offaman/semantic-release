@@ -18,6 +18,6 @@ steps:
 - task: CmdLine@2
   env: { GH_TOKEN: "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" }
   inputs:
-    script: 'npx semantic-release'
+    script: 'npm run semantic-release'
     
 
