@@ -16,7 +16,6 @@ steps:
   displayName: 'Install Node.js'
 
 - task: CmdLine@2
-  env: { GH_TOKEN: "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" }
   inputs:
     script: 'npm run semantic-release'
     
